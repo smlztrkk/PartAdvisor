@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #0d6efd;
+  /* background-color: rgb(23, 162, 184); */
+  display: flex;
+  align-items: center; /*yukarıdan aşşağıya ortalama sağlar*/
+  justify-content: space-between; /*soldan sağa ortalama sağlar*/
+}
+.lctn {
+  display: flex;
+  margin-right: 20px;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.button {
+  margin: 10px;
+  border: 1px solid white;
+  color: black;
+  background-color: orange;
+  justify-content: space-evenly;
+}
+.button:hover {
+  padding: auto;
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(199, 129, 0);
+}
+.logo {
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+}
+.navbar {
+  width: 175px;
+  height: 200px;
+}
+.ddmenu {
+  display: flex;
+  gap: 10px;
+}
