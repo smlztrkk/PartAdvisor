@@ -18,14 +18,14 @@
   margin: 10px;
   border: 1px solid white;
   color: black;
-  background-color: orange;
+  background-color: rgb(255, 187, 0);
   justify-content: space-evenly;
 }
 .button:hover {
   padding: auto;
   border: 1px solid white;
   color: white;
-  background-color: rgb(199, 129, 0);
+  background-color: rgb(179, 95, 0);
 }
 .logo {
   margin-left: 20px;

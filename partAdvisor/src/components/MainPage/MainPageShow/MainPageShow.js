@@ -19,11 +19,7 @@ const MainPageShow = ({ part }) => {
         <h5>{part.ozelligi}</h5>
       </div>
       <div className="Mbbut">
-        <a
-          href="https://www.bridgestone.com.tr/lastik/511185-a005-evo-dort-mevsim-27540r19-105y"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={part.link} target="_blank" rel="noopener noreferrer">
           <button className="btn btn-primary Mbut">ürüne git</button>
         </a>
       </div>

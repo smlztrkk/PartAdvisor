@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import path from "../../image/Logo.png";
@@ -7,6 +7,17 @@ import DropDownMod from "./DropDown/DropDownMod";
 import DropDownYil from "./DropDown/DropDownYil";
 import DropDownPar from "./DropDown/DropDownPar";
 const Header = () => {
+  const [button1Visible, setButton1Visible] = useState(true);
+  const [button2Visible, setButton2Visible] = useState(true);
+  const handleButtonClick = (buttonNumber) => {
+    if (buttonNumber === 1) {
+      setButton1Visible(!button1Visible);
+      setButton2Visible("true");
+    } else if (buttonNumber === 2) {
+      setButton1Visible("true");
+      setButton2Visible(!button2Visible);
+    }
+  };
   return (
     <div className="header">
       <div className="logo">
@@ -21,14 +32,32 @@ const Header = () => {
 
       <div className="lctn">
         <div>
-          <Link to="/Login">
-            <button className="btn button">Giriş Yap</button>
-          </Link>
+          {button1Visible && (
+            <Link to="/Login">
+              <button
+                onClick={() => {
+                  handleButtonClick(1);
+                }}
+                className="btn button"
+              >
+                Giriş Yap
+              </button>
+            </Link>
+          )}
         </div>
         <div>
-          <Link to="/Register">
-            <button className="btn button">Kayıt Ol</button>
-          </Link>
+          {button2Visible && (
+            <Link to="/Register">
+              <button
+                onClick={() => {
+                  handleButtonClick(2);
+                }}
+                className="btn button"
+              >
+                Kayıt Ol
+              </button>
+            </Link>
+          )}
         </div>
         <div>
           <Link to="/">

@@ -16,6 +16,13 @@ import Visibility from "@mui/icons-material/Visibility";
 import IconButton from "@mui/material/IconButton";
 import * as React from "react";
 const Register = () => {
+  const [button1Visible, setButton1Visible] = useState(true);
+
+  const handleButtonClick = (buttonNumber) => {
+    if (buttonNumber === 1) {
+      setButton1Visible(!button1Visible);
+    }
+  };
   const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -154,7 +161,10 @@ const Register = () => {
               </div>
               <div className="input-group mb-3">
                 <button
-                  onClick={authFunc}
+                  onClick={() => {
+                    authFunc();
+                    handleButtonClick(1);
+                  }}
                   className="btn btn-lg w-100 fs-6 butn"
                 >
                   Giriş Yap
