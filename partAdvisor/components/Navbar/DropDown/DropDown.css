@@ -1,0 +1,16 @@
+.dbutn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgb(255, 187, 0);
+  color: black;
+  transition: ease 0.4s;
+}
+.dbutn:hover {
+  background-color: rgb(136, 88, 0);
+  color: white;
+}

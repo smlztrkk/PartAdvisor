@@ -1,0 +1,39 @@
+.Mitem {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgb(201, 199, 199);
+  border-radius: 20px;
+  padding: 4;
+  margin: 2;
+  transition: ease 0.4s;
+}
+.Mitem:hover {
+  box-shadow: 0px 0px 15px 0px gray;
+}
+.Minformation {
+  border-bottom: 1px solid rgb(201, 199, 199);
+  border-top: 1px solid rgb(201, 199, 199);
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.Mimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.Mbut {
+  width: 100%;
+}
+.Mbbut {
+  padding: 20px;
+  width: 350px;
+}
+h2 {
+  color: orange;
+}
