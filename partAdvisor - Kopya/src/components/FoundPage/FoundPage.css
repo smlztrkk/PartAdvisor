@@ -1,0 +1,7 @@
+.cards {
+  padding: 4;
+  margin: 50px 150px 50px 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 sütunlu bir grid oluştur */
+  grid-gap: 20px 30px; /* Sütunlar ve satırlar arasında boşluk bırak */
+}

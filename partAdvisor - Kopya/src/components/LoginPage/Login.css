@@ -1,0 +1,25 @@
+.text {
+  margin-right: 1rem;
+  width: 100%;
+}
+.Siferemiunuttum {
+  justify-content: left;
+}
+.ara {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.shdw {
+  transition: ease 0.4s;
+}
+.shdw:hover {
+  box-shadow: 0px 0px 15px 0px gray;
+}
+
+.GirisYap {
+  color: orange;
+  text-align: center;
+}
